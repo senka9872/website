@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Тест — ЕннеаСвіт</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <a href="index.html" class="logo">
+        Еннеа<span>Світ</span>
+    </a>
+
+    <nav class="navigation">
+        <a href="index.html">Головна</a>
+        <a href="index.html#types">9 типів</a>
+    </nav>
+
+    <button id="themeButton" class="theme-button">
+        🌙
+    </button>
+
+</header>
+
+
+<main class="quiz-page">
+
+    <div class="quiz-container">
+
+        <p class="section-label">
+            ТЕСТ
+        </p>
+
+        <h1>
+            Який у тебе тип еннеаграми?
+        </h1>
+
+        <p class="quiz-intro">
+            Обирай відповідь, яка найбільше схожа
+            на тебе. Тут немає правильних або неправильних
+            відповідей.
+        </p>
+
+
+        <!-- Прогресс -->
+
+        <div class="progress-container">
+
+            <div class="progress-info">
+                <span id="questionNumber">
+                    Питання 1 з 20
+                </span>
+
+                <span id="progressPercent">
+                    5%
+                </span>
+            </div>
+
+            <div class="progress-bar">
+                <div id="progress"></div>
+            </div>
+
+        </div>
+
+
+        <!-- Вопрос -->
+
+        <div class="question-card">
+
+            <h2 id="question">
+                Завантаження питання...
+            </h2>
+
+            <div id="answers" class="answers"></div>
+
+        </div>
+
+
+        <button id="nextButton" class="main-button next-button" disabled>
+            Наступне питання →
+        </button>
+
+    </div>
+
+</main>
+
+
+<script src="js/main.js"></script>
+<script src="js/test.js"></script>
+
+</body>
+</html>

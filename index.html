@@ -1,0 +1,325 @@
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ЕннеаСвіт — пізнай себе</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <a href="index.html" class="logo">
+        Еннеа<span>Світ</span>
+    </a>
+
+    <nav class="navigation">
+        <a href="#about">Про еннеаграму</a>
+        <a href="#types">9 типів</a>
+        <a href="#test">Тест</a>
+    </nav>
+
+    <button id="themeButton" class="theme-button">
+        🌙
+    </button>
+
+</header>
+
+
+<main>
+
+    <!-- Головний блок -->
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <p class="small-title">
+                ПІЗНАЙ СЕБЕ
+            </p>
+
+            <h1>
+                Хто ти насправді?
+            </h1>
+
+            <p class="hero-description">
+                Еннеаграма допомагає краще зрозуміти свої
+                мотиви, страхи, сильні сторони та спосіб
+                взаємодії з іншими людьми.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#test" class="main-button">
+                    Пройти тест →
+                </a>
+
+                <a href="#types" class="secondary-button">
+                    Дослідити типи
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- О еннеаграмме -->
+
+    <section id="about" class="about">
+
+        <p class="section-label">
+            ЩО ЦЕ?
+        </p>
+
+        <h2>
+            Еннеаграма — це карта особистості
+        </h2>
+
+        <p>
+            Еннеаграма описує дев'ять основних типів особистості
+            та допомагає дослідити те, що стоїть за нашими
+            думками, емоціями та поведінкою.
+        </p>
+
+    </section>
+
+
+    <!-- Типы -->
+
+    <section id="types" class="types-section">
+
+        <p class="section-label">
+            ДОСЛІДЖУЙ
+        </p>
+
+        <h2>
+            Дев'ять типів особистості
+        </h2>
+
+        <div class="types-grid">
+
+            <article class="type-card">
+                <div class="type-number">1</div>
+                <h3>Реформатор</h3>
+                <p>
+                    Прагне бути правильним, чесним
+                    та вдосконалювати світ навколо себе.
+                </p>
+            </article>
+
+
+            <article class="type-card">
+                <div class="type-number">2</div>
+                <h3>Помічник</h3>
+                <p>
+                    Турботливий, уважний до інших
+                    та прагне бути потрібним.
+                </p>
+            </article>
+
+
+            <article class="type-card">
+                <div class="type-number">3</div>
+                <h3>Досягатор</h3>
+                <p>
+                    Орієнтований на результат,
+                    успіх та визнання.
+                </p>
+            </article>
+
+
+            <article class="type-card">
+                <div class="type-number">4</div>
+                <h3>Індивідуаліст</h3>
+                <p>
+                    Цінує унікальність, глибокі емоції
+                    та самовираження.
+                </p>
+            </article>
+
+
+            <article class="type-card">
+                <div class="type-number">5</div>
+                <h3>Дослідник</h3>
+                <p>
+                    Любить знання, аналіз та
+                    незалежність.
+                </p>
+            </article>
+
+
+            <article class="type-card">
+                <div class="type-number">6</div>
+                <h3>Скептик</h3>
+                <p>
+                    Цінує безпеку, стабільність
+                    та надійність.
+                </p>
+            </article>
+
+
+            <article class="type-card">
+                <div class="type-number">7</div>
+                <h3>Ентузіаст</h3>
+                <p>
+                    Шукає нові враження, свободу
+                    та можливості.
+                </p>
+            </article>
+
+
+            <article class="type-card">
+                <div class="type-number">8</div>
+                <h3>Керівник</h3>
+                <p>
+                    Сильний, незалежний та готовий
+                    захищати себе й інших.
+                </p>
+            </article>
+
+
+            <article class="type-card">
+                <div class="type-number">9</div>
+                <h3>Миротворець</h3>
+                <p>
+                    Цінує гармонію, спокій
+                    та комфортні стосунки.
+                </p>
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- Тест -->
+
+    <section id="test" class="test-section">
+
+        <div>
+
+            <p class="section-label">
+                ГОТОВА?
+            </p>
+
+            <h2>
+                Дізнайся свій тип
+            </h2>
+
+            <p>
+                Пройди невеликий інтерактивний тест
+                та дізнайся, який тип еннеаграми
+                найбільше тобі підходить.
+            </p>
+
+            <a href="test.html" class="main-button">
+                Почати тест →
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!-- Модальное окно типа -->
+
+<div id="typeModal" class="modal">
+
+    <div class="modal-content">
+
+        <button id="closeModal" class="close-modal">
+            ×
+        </button>
+
+        <div id="modalNumber" class="modal-number">
+            9
+        </div>
+
+        <p class="modal-label">
+            ТИП ЕННЕАГРАММИ
+        </p>
+
+        <h2 id="modalTitle">
+            Миротворець
+        </h2>
+
+        <p id="modalDescription" class="modal-description">
+            Ти прагнеш гармонії та спокою.
+        </p>
+
+
+        <div class="modal-info">
+
+            <div class="info-item">
+
+                <span>💭</span>
+
+                <div>
+                    <strong>Основний страх</strong>
+
+                    <p id="modalFear">
+                        Втрата зв'язку з іншими
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="info-item">
+
+                <span>🎯</span>
+
+                <div>
+                    <strong>Основне бажання</strong>
+
+                    <p id="modalDesire">
+                        Відчувати внутрішній спокій
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="info-item">
+
+                <span>✨</span>
+
+                <div>
+                    <strong>Сильна сторона</strong>
+
+                    <p id="modalStrength">
+                        Уміння створювати гармонію
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+
+    <p>
+        ЕннеаСвіт © 2026
+    </p>
+
+    <p>
+        Навчальний проєкт про еннеаграму
+    </p>
+
+</footer>
+
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
