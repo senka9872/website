@@ -1,6 +1,4 @@
-// ================================
-// ВОПРОСЫ ТЕСТА
-// ================================
+
 
 const questions = [
 
@@ -107,10 +105,6 @@ const questions = [
 ];
 
 
-// ================================
-// НАЗВИ ТИПІВ
-// ================================
-
 const typeNames = {
 
     1: "Реформатор",
@@ -126,9 +120,7 @@ const typeNames = {
 };
 
 
-// ================================
-// ЗМІННІ
-// ================================
+
 
 let currentQuestion = 0;
 
@@ -147,9 +139,7 @@ let scores = {
 let selectedAnswer = null;
 
 
-// ================================
-// ЭЛЕМЕНТЫ HTML
-// ================================
+
 
 const questionElement =
     document.getElementById("question");
@@ -170,9 +160,6 @@ const progress =
     document.getElementById("progress");
 
 
-// ================================
-// ПОКАЗ ВОПРОСА
-// ================================
 
 function showQuestion() {
 
@@ -202,7 +189,7 @@ function showQuestion() {
     progress.style.width = `${percent}%`;
 
 
-    // Варианты ответов
+
 
     const answers = [
         {
@@ -266,9 +253,7 @@ function showQuestion() {
 }
 
 
-// ================================
-// СЛЕДУЮЩИЙ ВОПРОС
-// ================================
+
 
 nextButton.addEventListener("click", function() {
 
@@ -281,7 +266,7 @@ nextButton.addEventListener("click", function() {
         questions[currentQuestion].type;
 
 
-    // Добавляем баллы
+
 
     scores[currentType] += selectedAnswer;
 
@@ -289,7 +274,7 @@ nextButton.addEventListener("click", function() {
     currentQuestion++;
 
 
-    // Проверяем конец теста
+
 
     if (currentQuestion >= questions.length) {
 
@@ -304,9 +289,7 @@ nextButton.addEventListener("click", function() {
 });
 
 
-// ================================
-// РЕЗУЛЬТАТ
-// ================================
+
 
 function finishTest() {
 
@@ -329,7 +312,7 @@ function finishTest() {
         sortedTypes[2][0];
 
 
-    // Сохраняем результат
+
 
     const result = {
 
@@ -350,15 +333,11 @@ function finishTest() {
     );
 
 
-    // Переходим на страницу результата
+
 
     window.location.href = "result.html";
 
 }
 
-
-// ================================
-// ЗАПУСК
-// ================================
 
 showQuestion();
