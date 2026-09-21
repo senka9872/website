@@ -1,7 +1,3 @@
-// ================================
-// НАЗВИ ТИПІВ
-// ================================
-
 const typeNames = {
 
     1: "Реформатор",
@@ -17,9 +13,6 @@ const typeNames = {
 };
 
 
-// ================================
-// ОПИСИ
-// ================================
 
 const descriptions = {
 
@@ -53,9 +46,7 @@ const descriptions = {
 };
 
 
-// ================================
-// ПОЛУЧАЕМ РЕЗУЛЬТАТ
-// ================================
+
 
 const savedResult =
     localStorage.getItem("enneagramResult");
@@ -81,7 +72,7 @@ if (!savedResult) {
         result.thirdType;
 
 
-    // Главный результат
+
 
     document.getElementById("mainNumber")
         .textContent = mainType;
@@ -95,7 +86,7 @@ if (!savedResult) {
         .textContent = descriptions[mainType];
 
 
-    // Второй результат
+
 
     document.getElementById("secondNumber")
         .textContent = secondType;
@@ -105,7 +96,7 @@ if (!savedResult) {
         .textContent = typeNames[secondType];
 
 
-    // Третий результат
+
 
     document.getElementById("thirdNumber")
         .textContent = thirdType;
