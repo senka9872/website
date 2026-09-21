@@ -29,10 +29,6 @@ body {
 }
 
 
-/* =========================
-   HEADER
-========================= */
-
 .header {
     height: 80px;
 
@@ -107,10 +103,6 @@ body {
     font-size: 18px;
 }
 
-
-/* =========================
-   HERO
-========================= */
 
 .hero {
     min-height: 700px;
@@ -224,9 +216,6 @@ body {
 }
 
 
-/* =========================
-   ENNEAGRAM
-========================= */
 
 .enneagram {
     width: 450px;
@@ -341,10 +330,6 @@ body {
 }
 
 
-/* =========================
-   ABOUT
-========================= */
-
 .about {
     max-width: 800px;
 
@@ -374,10 +359,6 @@ body {
     font-size: 17px;
 }
 
-
-/* =========================
-   TYPES
-========================= */
 
 .types-section {
     padding: 100px 8%;
@@ -455,10 +436,6 @@ body {
 }
 
 
-/* =========================
-   TEST
-========================= */
-
 .test-section {
     margin: 100px 8%;
 
@@ -482,10 +459,6 @@ body {
 }
 
 
-/* =========================
-   FOOTER
-========================= */
-
 footer {
     padding: 40px 8%;
 
@@ -499,9 +472,6 @@ footer {
 }
 
 
-/* =========================
-   LIGHT THEME
-========================= */
 
 body.light {
     background: #f5f3fa;
@@ -541,10 +511,6 @@ body.light .test-section p {
     color: #686273;
 }
 
-
-/* =========================
-   MOBILE
-========================= */
 
 @media (max-width: 900px) {
 
@@ -640,9 +606,6 @@ body.light .test-section p {
     }
 }
 
-/* =========================
-   MODAL
-========================= */
 
 .modal {
     position: fixed;
@@ -873,8 +836,6 @@ body.light .test-section p {
 }
 
 
-/* Запрещаем прокрутку страницы,
-   когда открыто окно */
 
 body.modal-open {
 
@@ -883,7 +844,6 @@ body.modal-open {
 }
 
 
-/* Светлая тема */
 
 body.light .modal-content {
 
@@ -912,7 +872,6 @@ body.light .info-item {
 }
 
 
-/* Телефон */
 
 @media (max-width: 600px) {
 
@@ -941,9 +900,6 @@ body.light .info-item {
 
 }
 
-/* =========================
-   ENNEAGRAM CONNECTIONS
-========================= */
 
 .enneagram-lines {
     position: absolute;
@@ -975,8 +931,6 @@ body.light .info-item {
 }
 
 
-/* Подсветка линии */
-
 .enneagram-line.active {
     stroke: #a98cff;
 
@@ -997,7 +951,6 @@ body.light .info-item {
     scale: 1.15;
 }
 
-/* Рівномірне розташування типів */
 
 .type-wrapper {
     position: absolute;
@@ -1014,16 +967,6 @@ body.light .info-item {
 }
 
 
-/* =========================
-   РІВНОМІРНЕ РОЗТАШУВАННЯ ТИПІВ
-========================= */
-
-/* =========================
-   РІВНОМІРНЕ РОЗТАШУВАННЯ ТИПІВ
-========================= */
-
-/* Кожна обгортка займає весь круг */
-
 .type-wrapper {
     position: absolute;
 
@@ -1039,8 +982,6 @@ body.light .info-item {
 }
 
 
-/* Сама кнопка знаходиться зверху кола */
-
 .type-wrapper .type {
     position: absolute;
 
@@ -1054,8 +995,6 @@ body.light .info-item {
     pointer-events: auto;
 }
 
-
-/* 360° ÷ 9 = 40° */
 
 .type-wrapper-1 {
     --angle: 0deg;
@@ -1102,9 +1041,6 @@ body.light .info-item {
     --reverse-angle: -320deg;
 }
 
-/* =========================
-   QUIZ
-========================= */
 
 .quiz-page {
     min-height: calc(100vh - 80px);
@@ -1141,8 +1077,6 @@ body.light .info-item {
     margin-bottom: 50px;
 }
 
-
-/* Прогресс */
 
 .progress-container {
     margin-bottom: 35px;
@@ -1188,8 +1122,6 @@ body.light .info-item {
 }
 
 
-/* Карточка вопроса */
-
 .question-card {
     padding: 45px 35px;
 
@@ -1211,8 +1143,6 @@ body.light .info-item {
     margin-bottom: 35px;
 }
 
-
-/* Ответы */
 
 .answers {
     display: flex;
@@ -1280,8 +1210,6 @@ body.light .info-item {
 }
 
 
-/* Светлая тема */
-
 body.light .question-card {
     background: white;
 
@@ -1301,9 +1229,6 @@ body.light .answer {
 body.light .answer:hover {
     background: #f2edff;
 }
-
-
-/* Телефон */
 
 @media (max-width: 600px) {
 
@@ -1328,9 +1253,6 @@ body.light .answer:hover {
 
 }
 
-/* =========================
-   RESULT
-========================= */
 
 .result-page {
     min-height: calc(100vh - 80px);
