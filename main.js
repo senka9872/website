@@ -1,6 +1,4 @@
-// =========================
-// ТЕМА
-// =========================
+
 
 const themeButton = document.getElementById("themeButton");
 
@@ -21,7 +19,6 @@ themeButton.addEventListener("click", function () {
 });
 
 
-// Проверяем сохранённую тему
 
 const savedTheme = localStorage.getItem("theme");
 
@@ -32,10 +29,6 @@ if (savedTheme === "light") {
     themeButton.textContent = "☀️";
 }
 
-
-// =========================
-// ТИПЫ ЭННЕАГРАММЫ
-// =========================
 
 const types = {
 
@@ -192,10 +185,6 @@ const types = {
     }
 };
 
-// =========================
-// МОДАЛЬНОЕ ОКНО ТИПА
-// =========================
-
 const modal =
     document.getElementById("typeModal");
 
@@ -240,8 +229,6 @@ typeButtons.forEach(function(item) {
 });
 
 
-// Выделяем выбранный тип
-
 button.classList.add("active-type");
 
         modalNumber.textContent =
@@ -272,7 +259,6 @@ button.classList.add("active-type");
 });
 
 
-// Закрытие
 
 closeModal.addEventListener("click", function() {
 
@@ -282,8 +268,6 @@ closeModal.addEventListener("click", function() {
 
 });
 
-
-// Закрытие при клике на фон
 
 modal.addEventListener("click", function(event) {
 
@@ -298,7 +282,6 @@ modal.addEventListener("click", function(event) {
 });
 
 
-// Закрытие клавишей Escape
 
 document.addEventListener("keydown", function(event) {
 
@@ -313,10 +296,6 @@ document.addEventListener("keydown", function(event) {
 });
 
 
-
-// =========================
-// КНОПКА ТЕСТА
-// =========================
 
 const startTest = document.getElementById("startTest");
 
